@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: mmpose
+Version: 1.3.1
+Summary: OpenMMLab Pose Estimation Toolbox and Benchmark.
+Home-page: https://github.com/open-mmlab/mmpose
+Author: MMPose Contributors
+Author-email: openmmlab@gmail.com
+License: Apache License 2.0
+Keywords: computer vision,pose estimation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: tests
+Provides-Extra: optional
+Provides-Extra: mim
+
+# HF-HRNet
+About the repo for paper: Efficient High-Resolution Visual Representation Learning with State Space Model for Human Pose Estimation.
+
+# **News**
+2025/06/30 Code is open source.
+
+
+# **Abstract**:
+
+Vision Transformers (ViTs) have achieved remarkable success in visual representation learning, primarily due to their ability to capture long-range global visual dependencies. High-resolution representations are vital for dense prediction tasks such as human pose estimation. However, the quadratic computational complexity of ViTs’ self-attention mechanism with respect to token length imposes significant computational burden, limiting both high-resolution (\ie, more visual tokens) representation learning and deployment performance on resource-constrained devices such as mobile platforms.
+State Space Models (SSMs) with efficient hardware-aware designs, \ie, Mamba, offer a promising alternative with linear complexity in token length and a global receptive field. Despite these advantages, Mamba faces key challenges in human pose estimation, including limited inductive bias, long-range forgetting, and low-resolution output representations.
+To address these limitations, we propose the Dynamic Visual State Space (DVSS) block, which enhances inductive bias through multi-scale convolutional kernels for local feature extraction across different scales, and mitigates long-range forgetting using deformable convolution while enabling adaptive spatial aggregation based on input and task-specific information.
+Building on the multi-resolution parallel architecture of HRNet~\cite{wang2020deep}, we introduce the High-Resolution Visual State Space Model (HRVMamba), which efficiently models high-resolution representations with linear complexity concerning token length and promotes effective multi-scale feature learning.
+Extensive experiments demonstrate that HRVMamba achieves competitive performance in human pose estimation, image classification, and semantic segmentation compared to benchmark models. 
+
+### Prepare datasets
+
+It is recommended to symlink the dataset root to `$PoseVMamba/data`.
+If your folder structure is different, you may need to change the corresponding paths in config files.
+
+**For COCO data**, please download from [COCO download](http://cocodataset.org/#download), 2017 Train/Val is needed for COCO keypoints training and validation. [HRNet-Human-Pose-Estimation](https://github.com/HRNet/HRNet-Human-Pose-Estimation) provides person detection result of COCO val2017 to reproduce our multi-person pose estimation results. Please download from [OneDrive](https://1drv.ms/f/s!AhIXJn_J-blWzzDXoz5BeFl8sWM-)
+Download and extract them under `$HF_HRNET/data`, and make them look like this:
+
+```
+HF-HRNet
+├── configs
+├── tools
+`── data
+    │── coco
+        │-- annotations
+        │   │-- person_keypoints_train2017.json
+        │   |-- person_keypoints_val2017.json
+        |-- person_detection_results
+        |   |-- COCO_val2017_detections_AP_H_56_person.json
+        │-- train2017
+        │   │-- 000000000009.jpg
+        │   │-- 000000000025.jpg
+        │   │-- 000000000030.jpg
+        │   │-- ...
+        `-- val2017
+            │-- 000000000139.jpg
+            │-- 000000000285.jpg
+            │-- 000000000632.jpg
+            │-- ...
+
+```
+
+
+# **Acknowledgement**:
+This project is developed based on the [MMPOSE](https://github.com/open-mmlab/mmpose)
+
+
+

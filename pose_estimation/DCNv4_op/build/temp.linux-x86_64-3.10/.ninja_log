@@ -1,0 +1,8 @@
+# ninja log v5
+2	23814	1719819747000000000	/mnt/petrelfs/zhanghao1/network_design/mambapose/DCNv4_op/build/temp.linux-x86_64-3.10/mnt/petrelfs/zhanghao1/network_design/mambapose/DCNv4_op/src/vision.o	faf3fef801eb36bf
+1	116054	1719819839000000000	/mnt/petrelfs/zhanghao1/network_design/mambapose/DCNv4_op/build/temp.linux-x86_64-3.10/mnt/petrelfs/zhanghao1/network_design/mambapose/DCNv4_op/src/cuda/dcnv4_cuda.o	7a34b724652cfa94
+2	238019	1719819961000000000	/mnt/petrelfs/zhanghao1/network_design/mambapose/DCNv4_op/build/temp.linux-x86_64-3.10/mnt/petrelfs/zhanghao1/network_design/mambapose/DCNv4_op/src/cuda/flash_deform_attn_cuda.o	161d2aa20dc7937b
+9	26682	1733903160000000000	/mnt/petrelfs/zhanghao.p/network_design/mambapose/DCNv4_op/build/temp.linux-x86_64-3.10/mnt/petrelfs/zhanghao.p/network_design/mambapose/DCNv4_op/src/vision.o	8ecd5554f80c3b2f
+9	114063	1733903247000000000	/mnt/petrelfs/zhanghao.p/network_design/mambapose/DCNv4_op/build/temp.linux-x86_64-3.10/mnt/petrelfs/zhanghao.p/network_design/mambapose/DCNv4_op/src/cuda/dcnv4_cuda.o	f98aa26491a391e
+9	233978	1733903367000000000	/mnt/petrelfs/zhanghao.p/network_design/mambapose/DCNv4_op/build/temp.linux-x86_64-3.10/mnt/petrelfs/zhanghao.p/network_design/mambapose/DCNv4_op/src/cuda/flash_deform_attn_cuda.o	82657810cfa02828
+597	26288	1735133549000000000	/mnt/petrelfs/zhanghao.p/network_design/mambapose/DCNv4_op/build/temp.linux-x86_64-3.10/mnt/petrelfs/zhanghao.p/network_design/mambapose/DCNv4_op/src/vision.o	8ecd5554f80c3b2f

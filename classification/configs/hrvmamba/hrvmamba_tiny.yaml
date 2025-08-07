@@ -1,0 +1,11 @@
+DATA:
+  IMG_ON_MEMORY: False
+  IMG_SIZE: 256
+MODEL:
+  TYPE: hrvmamba_tiny
+  NAME: hrvmamba_tiny
+TRAIN:
+  EMA:
+    ENABLE: True
+    DECAY: 0.9999
+  BASE_LR: 5e-4

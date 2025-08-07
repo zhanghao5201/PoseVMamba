@@ -1,0 +1,10 @@
+DATA:
+  IMG_ON_MEMORY: False
+MODEL:
+  TYPE: hrformer_base
+  NAME: hrformer_base
+TRAIN:
+  EMA:
+    ENABLE: True
+    DECAY: 0.9999
+  BASE_LR: 5e-4
