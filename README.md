@@ -177,16 +177,16 @@ cd PoseVMamba/semantic_segmentation
 |      Model     | Input Size | Param (M) | FLOPs (G) |  AP  |                                             ckpts                                             |
 |:--------------:|:----------:|:---------:|:---------:|:----:|:-----------------------------------------------------------------------------------------------:|
 |  HRFormer-Tiny |   256x192  |     2     |    1.1    | 68.3 |   [ckpt](https://drive.google.com/file/d/1hS_IuLcLIAdryramUoCOLL-5tNS9gLp7/view?usp=sharing)  |
-| HRFormer-Small |   256x192  |     8     |    3.3    | 74.0 |                                               ckpt                                            |
-|  HRFormer-Base |   224x192  |     43    |    14.1   | 75.6 |                                               ckpt                                            |
+| HRFormer-Small |   256x192  |     8     |    3.3    | 74.0 |                                               -                                            |
+|  HRFormer-Base |   224x192  |     43    |    14.1   | 75.6 |                                               -                                            |
 |  HRVMamba-Tiny |   256x192  |     2     |    1.1    | 69.5 |   [ckpt](https://drive.google.com/file/d/1w1wYEUL6dS3KYMeAX3XV7O1Vnz-IATDw/view?usp=sharing)  |
 | HRVMamba-Small |   256x192  |     8     |    3.3    | 74.6 |   [ckpt](https://drive.google.com/file/d/1L3CO3D4L1Q1galRaSC82taDDqFqmukKt/view?usp=sharing)  |
 |  HRVMamba-Base |   256x192  |     47    |    14.2   | 76.5 |   [ckpt](https://drive.google.com/file/d/14JE7v6jdxtJaEMJCatqbmuhLkfBYVBOX/view?usp=sharing)  |
 
 |      Model     | Input Size | Param (M) | FLOPs (G) |  AP  |                                             ckpts                                             |
 |:--------------:|:----------:|:---------:|:---------:|:----:|:-----------------------------------------------------------------------------------------------:|
-| HRFormer-Small |   384x288  |     8     |    7.3    | 75.6 |                                               ckpt                                            |
-|  HRFormer-Base |   384x288  |     43    |    30.9   | 77.2 |                                               ckpt                                            |
+| HRFormer-Small |   384x288  |     8     |    7.3    | 75.6 |                                               -                                            |
+|  HRFormer-Base |   384x288  |     43    |    30.9   | 77.2 |                                               -                                            |
 | HRVMamba-Small |   384x288  |     8     |    7.4    | 76.4 |   [ckpt](https://drive.google.com/file/d/1aqkUoQog4hl1dSbkUkwQvlwgistpxtzQ/view?usp=sharing)  |
 |  HRVMamba-Base |   384x288  |     47    |    32.0   | 77.7 |   [ckpt](https://drive.google.com/file/d/161d_LhWBBvBOSXxPBGRBNCjYr8PP0w9c/view?usp=sharing)  |
 
@@ -212,7 +212,7 @@ cd PoseVMamba/semantic_segmentation
 | LocalVMamba-S [\[5\]](#5) |   81M   |   1095G   |    50.0   |    51.0   | - |
 | MambaOut-B [\[6\]](#6)    |   112M  |   1178G   |    49.6   |    51.0   | - |
 | MambaVision-B [\[7\]](#7) |   126M  |   1342G   |    49.1   |     -     | - |
-| **HRVMamba-Base (Ours)**  | **99M** | **1184G** |  **51.4** |  **52.2** | ckpt |
+| **HRVMamba-Base (Ours)**  | **99M** | **1184G** |  **51.4** |  **52.2** | [ckpt](https://drive.google.com/file/d/1O288Y_VhuWRtTXO2WpTbGkEwEn2raik-/view?usp=sharing) |
 
 
 ## **Acknowledgement**:
