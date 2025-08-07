@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 source /mnt/petrelfs/zhanghao.p/.zhshrc_netnew
-conda activate mambapose
+conda activate PoseVMamba
 
-cd /mnt/petrelfs/zhanghao.p/zhanghao5201/PoseVMamba/classification
+cd PoseVMamba/classification
 pwd
 
 
@@ -17,7 +17,7 @@ BATCH_SIZE=$5
 CPUS_PER_TASK=${CPUS_PER_TASK:-10}
 SRUN_ARGS=${SRUN_ARGS:-""}
 
-PYTHONPATH="/mnt/petrelfs/zhanghao.p/zhanghao5201/PoseVMamba/classification/src":$PYTHONPATH \
+PYTHONPATH="PoseVMamba/classification/src":$PYTHONPATH \
 srun -p ${PARTITION} \
     --job-name=${JOB_NAME} \
     --gres=gpu:${GPUS_PER_NODE} \

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 source ~/.zhshrc_netnew
-conda activate mambapose
+conda activate PoseVMamba
 
 PARTITION=$1
 JOB_NAME=$2

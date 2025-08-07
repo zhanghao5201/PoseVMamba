@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 source /mnt/petrelfs/zhanghao.p/.zhshrc_netnew
-conda activate mambapose
+conda activate PoseVMamba
 
-cd /mnt/petrelfs/zhanghao.p/zhanghao5201/PoseVMamba/pose_estimation
+cd PoseVMamba/pose_estimation
 pwd
 
 PARTITION=$1
-JOB_NAME=$2
+JOB_NAME=$2s
 PORT=$3
 CONFIG=$4
 GPUS=$5
@@ -14,7 +14,7 @@ NNODES=${NNODES:-1}
 NODE_RANK=${NODE_RANK:-0}
 MASTER_ADDR=${MASTER_ADDR:-"127.0.0.1"}
 
-PYTHONPATH="/mnt/petrelfs/zhanghao.p/zhanghao5201/PoseVMamba/pose_estimation/src":$PYTHONPATH 
+PYTHONPATH="PoseVMamba/pose_estimation/src":$PYTHONPATH 
 srun --partition=$PARTITION --time=5-00:00:00 --quotatype=spot \
 --mpi=pmi2 \
 --gres=gpu:$GPUS \

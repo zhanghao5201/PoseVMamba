@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 source ~/.zhshrc_net
-conda activate mambapose
+conda activate PoseVMamba
 
 
 
