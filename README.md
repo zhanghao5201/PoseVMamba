@@ -2,7 +2,7 @@
 About the repo for paper: Efficient High-Resolution Visual Representation Learning with State Space Model for Human Pose Estimation.
 
 ## **News**
-2025/08/07 Code is open source.
+2025/08/07 Code and model checkpoints are open source.
 
 
 ## **Abstract**
@@ -203,9 +203,17 @@ cd PoseVMamba/semantic_segmentation
 |  HRVMamba-Base |   224x224  |     61    |    15.8   |    84.2   | [ckpt](https://drive.google.com/file/d/1jbXjvCBdjgraeEaJrDjD2wStpxJtCEuy/view?usp=sharing) |
 
 ### **Semantic Segmentation on ADE20K**
-| Model | mIoU (SS) | mIoU (MS) | Ckpt |
-|:---------------|:----:|:--:|
-| HRVMamba-Base |   51.4   |   52.2   |   [ckpt](https://drive.google.com/file/d/1mc_a_DpsazSkjwqChttemyMXyN_yrLbg/view?usp=sharing)   |
+| Method                    | #Param. |   FLOPs   | mIoU (SS) | mIoU (MS) | Ckpt |
+| :------------------------ | :-----: | :-------: | :-------: | :-------: | :--: |
+| Swin-B [\[1\]](#1)        |   121M  |   1188G   |    48.1   |    49.7   | - |
+| ConvNeXt-B [\[2\]](#2)    |   122M  |   1170G   |    49.1   |    49.9   | - |
+| HRFormer-Base [\[3\]](#3) |   56M   |   1120G   |    48.7   |    50.0   | - |
+| VMamba-B [\[4\]](#4)      |   122M  |   1170G   |    51.0   |    51.6   | - |
+| LocalVMamba-S [\[5\]](#5) |   81M   |   1095G   |    50.0   |    51.0   | - |
+| MambaOut-B [\[6\]](#6)    |   112M  |   1178G   |    49.6   |    51.0   | - |
+| MambaVision-B [\[7\]](#7) |   126M  |   1342G   |    49.1   |     -     | - |
+| **HRVMamba-Base (Ours)**  | **99M** | **1184G** |  **51.4** |  **52.2** | ckpt |
+
 
 ## **Acknowledgement**:
 This project is developed based on the [MMPOSE](https://github.com/open-mmlab/mmpose).
