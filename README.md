@@ -205,13 +205,13 @@ cd PoseVMamba/semantic_segmentation
 ### **Semantic Segmentation on ADE20K**
 | Method                    | #Param. |   FLOPs   | mIoU (SS) | mIoU (MS) | Ckpt |
 | :------------------------ | :-----: | :-------: | :-------: | :-------: | :--: |
-| Swin-B [\[1\]](#1)        |   121M  |   1188G   |    48.1   |    49.7   | - |
-| ConvNeXt-B [\[2\]](#2)    |   122M  |   1170G   |    49.1   |    49.9   | - |
-| HRFormer-Base [\[3\]](#3) |   56M   |   1120G   |    48.7   |    50.0   | - |
-| VMamba-B [\[4\]](#4)      |   122M  |   1170G   |    51.0   |    51.6   | - |
-| LocalVMamba-S [\[5\]](#5) |   81M   |   1095G   |    50.0   |    51.0   | - |
-| MambaOut-B [\[6\]](#6)    |   112M  |   1178G   |    49.6   |    51.0   | - |
-| MambaVision-B [\[7\]](#7) |   126M  |   1342G   |    49.1   |     -     | - |
+| Swin-B         |   121M  |   1188G   |    48.1   |    49.7   | - |
+| ConvNeXt-B     |   122M  |   1170G   |    49.1   |    49.9   | - |
+| HRFormer-Base  |   56M   |   1120G   |    48.7   |    50.0   | - |
+| VMamba-B       |   122M  |   1170G   |    51.0   |    51.6   | - |
+| LocalVMamba-S  |   81M   |   1095G   |    50.0   |    51.0   | - |
+| MambaOut-B     |   112M  |   1178G   |    49.6   |    51.0   | - |
+| MambaVision-B  |   126M  |   1342G   |    49.1   |     -     | - |
 | **HRVMamba-Base (Ours)**  | **99M** | **1184G** |  **51.4** |  **52.2** | [ckpt](https://drive.google.com/file/d/1O288Y_VhuWRtTXO2WpTbGkEwEn2raik-/view?usp=sharing) |
 
 
